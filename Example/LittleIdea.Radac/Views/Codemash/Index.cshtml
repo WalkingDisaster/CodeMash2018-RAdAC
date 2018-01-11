@@ -1,0 +1,12 @@
+﻿@using LittleIdea.Radac.Models.Codemash
+@model LittleIdea.Radac.Models.Codemash.IndexViewModel
+
+@{
+    ViewBag.Title = "CodeMash 2018 RAdAC";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+<ul>
+    <li>@Html.ActionLink("Patient Visit", "PatientVisit", "Codemash", new {patientId = Guid.Parse("3c48ac61-fdab-475d-ba21-2aea42edfc89"), appointmentId = Guid.Parse("20e13e24-21f6-4b79-b3ff-37b523b43e28") })</li>
+</ul>

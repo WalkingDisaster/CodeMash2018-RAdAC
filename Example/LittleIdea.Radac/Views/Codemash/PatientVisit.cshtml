@@ -1,0 +1,55 @@
+﻿@model LittleIdea.Radac.Models.Codemash.PatientVisitViewModel
+
+@{
+    ViewBag.Title = "Patient Visit";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    Safe data gets displayed on page load. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    Multiple requests too close together creates risk. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    We can keep clicking. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    But may get denied. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    More. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+<div>
+    And more. <span class="masked-data" data-route="/patient/@Model.PatientId/appointment/@Model.AppointmentId/unmask">Click Here to Unmask Secure Data</span>
+</div>
+
+@section Scripts
+    {
+    <environment include="Development">
+        <script src="~/js/unmask.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/unmask.min.js" asp-append-version="true"></script>
+    </environment>
+}
